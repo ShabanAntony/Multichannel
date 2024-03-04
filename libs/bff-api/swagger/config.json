@@ -28,43 +28,6 @@
                     "dota"
                 ]
             }
-        },
-        "/multistream/api/dota/{id}": {
-            "get": {
-                "operationId": "findOne",
-                "summary": "",
-                "parameters": [
-                    {
-                        "name": "id",
-                        "required": true,
-                        "in": "path",
-                        "schema": {
-                            "type": "string"
-                        }
-                    }
-                ],
-                "responses": {
-                    "200": {
-                        "description": "",
-                        "content": {
-                            "application/json": {
-                                "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#/components/schemas/DotaEntity"
-                                    }
-                                }
-                            }
-                        }
-                    },
-                    "401": {
-                        "description": ""
-                    }
-                },
-                "tags": [
-                    "dota"
-                ]
-            }
         }
     },
     "info": {
