@@ -1,0 +1,93 @@
+{
+    "openapi": "3.0.0",
+    "paths": {
+        "/multistream/api/dota": {
+            "get": {
+                "operationId": "findAll",
+                "summary": "",
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/DotaEntity"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": ""
+                    }
+                },
+                "tags": [
+                    "dota"
+                ]
+            }
+        },
+        "/multistream/api/dota/{id}": {
+            "get": {
+                "operationId": "findOne",
+                "summary": "",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "required": true,
+                        "in": "path",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/DotaEntity"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": ""
+                    }
+                },
+                "tags": [
+                    "dota"
+                ]
+            }
+        }
+    },
+    "info": {
+        "title": "Victorias Secret Discounter BFF API",
+        "description": "",
+        "version": "0.0.0",
+        "contact": {}
+    },
+    "tags": [],
+    "servers": [],
+    "components": {
+        "securitySchemes": {
+            "bearer": {
+                "scheme": "bearer",
+                "bearerFormat": "JWT",
+                "type": "http"
+            }
+        },
+        "schemas": {
+            "DotaEntity": {
+                "type": "object",
+                "properties": {}
+            }
+        }
+    }
+}

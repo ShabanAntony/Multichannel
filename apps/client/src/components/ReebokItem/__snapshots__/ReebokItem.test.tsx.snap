@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NikeItem should renders new item 1`] = `
+<li
+  className="base base__new"
+>
+  <ImageLink
+    alt="title_2"
+    className="image"
+    height={200}
+    link="url_2"
+    src="image_2"
+    width={200}
+  />
+  <p
+    className="name"
+  >
+    title_2
+  </p>
+  <p>
+    Prices: 
+    100
+     &gt; 
+    <span
+      className="discount"
+    >
+      75
+       (
+      25
+      %)
+    </span>
+     &gt; 
+    <span
+      className="finalPrice"
+    >
+      108$
+       (
+      292 ლ
+      )
+    </span>
+  </p>
+</li>
+`;
+
+exports[`NikeItem should renders regular item 1`] = `
+<li
+  className="base"
+>
+  <ImageLink
+    alt="title_2"
+    className="image"
+    height={200}
+    link="url_2"
+    src="image_2"
+    width={200}
+  />
+  <p
+    className="name"
+  >
+    title_2
+  </p>
+  <p>
+    Prices: 
+    100
+     &gt; 
+    <span
+      className="discount"
+    >
+      75
+       (
+      25
+      %)
+    </span>
+     &gt; 
+    <span
+      className="finalPrice"
+    >
+      108$
+       (
+      292 ლ
+      )
+    </span>
+  </p>
+</li>
+`;

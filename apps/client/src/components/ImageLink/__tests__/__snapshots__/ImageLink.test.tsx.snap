@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImageLink should renders correct 1`] = `
+<a
+  className="base base__skeleton"
+  href="link"
+  rel="noreferrer"
+  target="_blank"
+>
+  <img
+    alt="alt"
+    height={1}
+    loading="lazy"
+    src="src"
+    width={1}
+  />
+</a>
+`;
+
+exports[`ImageLink should renders when visible 1`] = `
+<a
+  className="base"
+  href="link"
+  rel="noreferrer"
+  target="_blank"
+>
+  <img
+    alt="alt"
+    height={1}
+    loading="lazy"
+    src="src"
+    width={1}
+  />
+</a>
+`;

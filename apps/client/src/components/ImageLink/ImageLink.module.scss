@@ -1,0 +1,9 @@
+.base {
+  & > img {
+    object-fit: cover;
+  }
+  &__skeleton {
+    background-color: rebeccapurple;
+    opacity: 0.2;
+  }
+}

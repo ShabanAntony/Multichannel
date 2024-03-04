@@ -1,0 +1,20 @@
+{
+  "name": "bff-api",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/bff-api/src",
+  "projectType": "library",
+  "targets": {
+    "generate": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "npx rimraf libs/bff-api/src",
+          "openapi --input libs/bff-api/swagger/config.json --useOptions --output libs/bff-api/src --client axios",
+          "git add --renormalize ."
+        ],
+        "parallel": false
+      }
+    }
+  },
+  "tags": []
+}

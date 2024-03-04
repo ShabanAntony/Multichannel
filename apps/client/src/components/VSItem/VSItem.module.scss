@@ -1,0 +1,55 @@
+.base {
+  width: 200px;
+
+  &:last-of-type {
+    margin-right: auto;
+  }
+
+  &__skeleton {
+    height: 450px;
+    background-color: rebeccapurple;
+  }
+}
+
+.name {
+  font-weight: 700;
+}
+
+.image {
+  display: inline-block;
+  height: 280px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  outline: 4px solid white;
+
+  .base__new & {
+    outline-color: red;
+  }
+}
+
+.discount {
+  color: chartreuse;
+}
+
+.finalPrice {
+  color: red;
+  font-weight: 700;
+}
+
+.swatches {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.swatch {
+  &_link {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}

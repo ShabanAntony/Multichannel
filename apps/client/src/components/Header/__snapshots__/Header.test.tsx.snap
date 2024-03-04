@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render correctly 1`] = `
+<div
+  className="base"
+>
+  <div
+    className="links"
+  >
+    <a
+      href="/multistream/items/vs"
+      onClick={[Function]}
+    >
+      <span
+        className="links_item"
+      >
+        Victoria's secret
+      </span>
+    </a>
+    <a
+      href="/multistream/items/pink"
+      onClick={[Function]}
+    >
+      <span
+        className="links_item links_item__selected"
+      >
+        PINK
+      </span>
+    </a>
+    <a
+      href="/multistream/items/nike"
+      onClick={[Function]}
+    >
+      <span
+        className="links_item"
+      >
+        Nike
+      </span>
+    </a>
+    <a
+      href="/multistream/items/reebok"
+      onClick={[Function]}
+    >
+      <span
+        className="links_item"
+      >
+        Reebok
+      </span>
+    </a>
+  </div>
+  <div
+    className="header"
+  >
+    <span>
+      Всего:
+      <strong>
+        100
+      </strong>
+      , подходящих:
+
+      <strong>
+        10
+      </strong>
+      , новых:
+      <strong>
+        10
+      </strong>
+    </span>
+    Hello
+  </div>
+</div>
+`;

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render NIKE route 1`] = `<mocked-NikePage />`;
+
+exports[`App should render PINK route 1`] = `<mocked-PinkPage />`;
+
+exports[`App should render VS classic route 1`] = `<mocked-VSPage />`;
+
+exports[`App should render default router 1`] = `null`;

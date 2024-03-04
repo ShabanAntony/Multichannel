@@ -1,0 +1,15 @@
+.base {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+
+  & > * {
+    user-select: none;
+  }
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: row;
+  gap: 0.2rem;
+}

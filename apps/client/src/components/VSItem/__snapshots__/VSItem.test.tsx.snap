@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VSItem should renders new item 1`] = `
+<li
+  className="base base__new"
+>
+  <ImageLink
+    alt=""
+    className="image"
+    height={280}
+    link="http://victoriassecret.com"
+    src="http://victoriassecret.com/p/200x280/image.jpg"
+    width={200}
+  />
+  <p
+    className="name"
+  />
+  <p>
+    Prices: 
+    0
+     &gt; 
+    <span
+      className="discount"
+    >
+      0
+       (
+      0
+      %)
+    </span>
+     &gt; 
+    <span
+      className="finalPrice"
+    >
+      0$
+       (
+      0 ლ
+      )
+    </span>
+  </p>
+  <div
+    className="swatches"
+  />
+</li>
+`;
+
+exports[`VSItem should renders regular item 1`] = `
+<li
+  className="base"
+>
+  <ImageLink
+    alt=""
+    className="image"
+    height={280}
+    link="http://victoriassecret.com"
+    src="http://victoriassecret.com/p/200x280/image.jpg"
+    width={200}
+  />
+  <p
+    className="name"
+  />
+  <p>
+    Prices: 
+    0
+     &gt; 
+    <span
+      className="discount"
+    >
+      0
+       (
+      0
+      %)
+    </span>
+     &gt; 
+    <span
+      className="finalPrice"
+    >
+      0$
+       (
+      0 ლ
+      )
+    </span>
+  </p>
+  <div
+    className="swatches"
+  />
+</li>
+`;
