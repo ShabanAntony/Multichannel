@@ -18,7 +18,11 @@ defmodule Multistream.OnlineStreamersListener do
     :attacker,
     :sketcher_8,
     :nine_class,
-    :miragedotess
+    :miragedotess,
+    :boxi,
+    :lodine,
+    :canceldota,
+    :kataomi
   ]
 
   def get_steamer_name(steam_id) do
@@ -39,17 +43,21 @@ defmodule Multistream.OnlineStreamersListener do
       attacker: 118_305_301,
       sketcher_8: 173_480_718,
       nine_class: 164_199_202,
-      miragedotess: 140_251_702
+      miragedotess: 140_251_702,
+      boxi: 77_490_514,
+      lodine: 113_619_848,
+      canceldota: 141_690_233,
+      kataomi: 196_878_136
     }
 
-    case Map.get(players, steam_id) do
-      nil ->
+    case Map.fetch(players, steam_id) do
+      {:ok, streamer_name} ->
+        Logger.info("Streamer name is: #{steam_id}")
+        streamer_name
+
+      :error ->
         Logger.info("No streamer found with the given steam_id: #{steam_id}")
         nil
-
-      streamer_name ->
-        Logger.info("Streamer name is: #{streamer_name}")
-        streamer_name
     end
   end
 
