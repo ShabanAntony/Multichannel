@@ -23,11 +23,14 @@ defmodule Multistream.LiveMatchesListener do
     :attacker,
     :sketcher_8,
     :nine_class,
-    :miragedotess
+    :miragedotess,
+    :boxi,
+    :lodine,
+    :canceldota,
+    :kataomi
   ]
 
   def get_twitch_url(streamer_name) do
-    # Получаем список игроков из ответа API
     streamers = %Multistream.LiveMatchesListener{
       nix: "https://www.twitch.tv/nix",
       cartixfuture: "https://www.twitch.tv/cartixfuture",
@@ -49,18 +52,26 @@ defmodule Multistream.LiveMatchesListener do
       iltw: "https://www.twitch.tv/iltw1",
       attacker: "https://www.twitch.tv/attacker",
       sketcher_8: "https://www.twitch.tv/sketcher_8",
-      nine_class: "https://www.twitch.tv/9class",
-      miragedotess: "https://www.twitch.tv/miragedotess"
+      nine_class: "https://www.twitch.tv/nine_class",
+      miragedotess: "https://www.twitch.tv/miragedotess",
+      boxi: "https://www.twitch.tv/boxi98",
+      lodine: "https://www.twitch.tv/lodine",
+      canceldota: "https://www.twitch.tv/canceldota",
+      kataomi: "https://www.twitch.tv/kataomi_"
     }
 
-    # Получаем имя игрока из списка игроков
-    streamer_name = Map.get(streamers, streamer_name)
+    case Map.fetch(streamers, streamer_name) do
+      {:ok, url} ->
+        # Logger.info("Streamer name is: #{streamer_name}, URL: #{url}")
+        url
 
-    # Получаем ссылку на канал Twitch для указанного игрока
-    twitch_url = Multistream.LiveMatchesListener.get_twitch_url(streamer_name)
+      :error ->
+        # Logger.info("No Twitch URL found for streamer: #{streamer_name}")
+        nil
+    end
+  end
 
-    Logger.info("Twitch URL: #{twitch_url}")
-
-    twitch_url
+  def slice(struct, range) do
+    Enum.slice(struct, range)
   end
 end
